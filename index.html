@@ -29,8 +29,9 @@
 
 			def decript(*args, **kws):
 				input_content = Element("input-content")
+				output_content = Element("output-content")
 				output = decriptor.decrpit(input_content.value, clf)
-				print(input_content, output)
+				output_content.element.innerText = input_content.value + ": " + output
 
 		</py-script>
 		<div class="py-box">

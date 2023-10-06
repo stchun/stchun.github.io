@@ -22,12 +22,22 @@
 		<py-script>
 			import decriptor
 
-			input_val = '621*6324#9127*012*5512!!*7127*623*6324'
-			display(input_val)
+			# input_val = '621*6324#9127*012*5512!!*7127*623*6324'
+			# display(input_val)
 
 			clf = decriptor.learn_model()
-			output = decriptor.decrpit(input_val, clf)
-			display(output)
+
+			def decript()
+				input_content = Element("input-content")
+				output = decriptor.decrpit(input_val, clf)
+				display(output)
+
 		</py-script>
+		<div class="py-box">
+			<input id="input-content">
+			<button py-click="decript()" id="decript-btn" class="py-button">
+				암호해독
+			</button>
+		</div>
 	</body>
 </html>

@@ -9,15 +9,24 @@
 		<img src="http://bit.ly/RhrMEn" />
 		<p>암호해독기 개발중.....</p>
 		<py-config>
-			packages = ["scikit-learn"]
+			packages = [
+				"scikit-learn",
+				"numpy",
+				"pandas",
+				"matplotlib",
+			]
 			[[fetch]]
-			files = ["./decriptor.py"]
+			files = ["./decriptor.py", "./data.xlsx"]
 		</py-config>
 		<py-script>
-			# import sklearn
 			import decriptor
-			display(decriptor.char_tokenize('0123'))
 
+			input_val = '621*6324#9127*012*5512!!*7127*623*6324'
+			print(input_val)
+
+			clf = learn_model()
+			output = decrpit(input_val, clf)
+			print(output)
 		</py-script>
 	</body>
 </html>
